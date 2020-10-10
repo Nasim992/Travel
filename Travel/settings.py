@@ -74,22 +74,28 @@ WSGI_APPLICATION = 'Travel.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/3.1/ref/settings/#databases
 
-# DATABASES = {
-#     'default': {
-#         'ENGINE': 'django.db.backends.sqlite3',
-#         'NAME': BASE_DIR / 'dataflair.sqlite3',
-#     }
-# }
 DATABASES = {
-'default': {
-'ENGINE': 'django.db.backends.mysql',
-'NAME': 'dataflair',
-'USER': 'root',
-'PASSWORD': '',
-'HOST': '127.0.0.1',
-'PORT': '',
+    'default': {
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'nasim',
+        'USER' : 'postgres',
+        'PASSWORD' : '17203056',
+        'HOST' : 'localhost'
+    }
 }
-}
+
+
+
+# DATABASES = {
+# 'default': {
+# 'ENGINE': 'django.db.backends.mysql',
+# 'NAME': 'dataflair',
+# 'USER': 'root',
+# 'PASSWORD': '',
+# 'HOST': '127.0.0.1',
+# 'PORT': '',
+# }
+# }
 
 
 # Password validation
